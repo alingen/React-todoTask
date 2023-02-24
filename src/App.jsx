@@ -8,11 +8,7 @@ export default function App() {
   const [numIncomplete, setNumIncomplete] = useState(0);
   const [numComplete, setNumComplete] = useState(0);
   const [todoText, setTodoText] = useState("");
-  const [incompleteTodos, setIncompleteTodos] = useState([
-    { label: "task1", checked: false, open: false },
-    { label: "task2", checked: false, open: false },
-    { label: "task3", checked: false, open: false }
-  ]);
+  const [incompleteTodos, setIncompleteTodos] = useState([]);
   const [updateText, setUpdateText] = useState();
 
   const onChangeTodoText = (event) => setTodoText(event.target.value);
